@@ -18,7 +18,7 @@ function typingLoader(el) {
 
 function typeChat(el, chatText) {
   let i = 0;
-  const chatContainerHeight = chatContainer.scrollHeight;
+
   let chatInterval = setInterval(() => {
     if (i < chatText.length) {
       el.innerHTML += chatText.charAt(i);
@@ -27,8 +27,6 @@ function typeChat(el, chatText) {
     else {
       clearInterval(chatInterval);
     }
-    
-    chatContainer.scrollTo(0, chatContainer.scrollTop + 1)
   }, 25);
 }
 
