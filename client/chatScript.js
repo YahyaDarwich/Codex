@@ -79,7 +79,7 @@ const handleSubmit = async (e) => {
   // messageDiv.innerHTML = "..."
   typingLoader(messageDiv)
 
-  const response = await fetch('https://codex-im0y.onrender.com/', {
+  const response = await fetch('https://codex-2au6.onrender.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
