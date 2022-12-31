@@ -27,6 +27,7 @@ function typeChat(el, chatText) {
     else {
       clearInterval(chatInterval);
     }
+    chatContainer.scrollTop = chatContainer.scrollHeight;
   }, 25);
 }
 
@@ -96,6 +97,7 @@ const handleSubmit = async (e) => {
     const data = await response.json();
     const parsedData = data.botMessage.trim();// trims any spaces '\n' 
     typeChat(messageDiv, parsedData);
+    chatContainer.scrollTop = chatContainer.scrollHeight;
   } else {
     const err = await response.text();
 
