@@ -94,6 +94,7 @@ body {
 
 .message {
   flex: 1;
+  line-height: normal;
   color: #dcdcdc;
   font-size: 16px;
   max-width: 100%;
