@@ -3,7 +3,7 @@ import userPng from "./public/assets/user.png";
 
 let loaderInterval;
 const form = document.querySelector("form");
-const chatContainer = document.querySelector("chat_container");
+const chatContainer = document.getElementById("chat_container");
 
 function typingLoader(el) {
   el.textContent = "";
@@ -20,7 +20,7 @@ function typeChat(el, chatText) {
   let i = 0;
 
   let chatInterval = setInterval(() => {
-    if (i < chatText.length()) {
+    if (i < chatText.length) {
       el.innerHTML += chatText.charAt(i);
       i++;
     }
