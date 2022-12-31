@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 }
 
 #header {
-  font-size: 22px;
+  font-size: 18px;
   color: white;
   margin-bottom: 40px;
   margin-top: 20px;
@@ -40,7 +40,7 @@ body {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
   -ms-overflow-style: none;
   scrollbar-width: none;
 
@@ -69,7 +69,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 10px;
+  gap: 7px;
 }
 
 .profile {
@@ -95,7 +95,7 @@ body {
 .message {
   flex: 1;
   color: #dcdcdc;
-  font-size: 20px;
+  font-size: 16px;
   max-width: 100%;
   overflow-x: scroll;
   white-space: pre-wrap; 
@@ -116,14 +116,14 @@ form {
   background: #40414F;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 7px;
   margin-bottom: 30px;
 }
 
 textarea {
   width: 100%;
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
   padding: 5px;
   background: transparent;
   border-radius: 15px;

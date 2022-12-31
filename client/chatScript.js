@@ -18,7 +18,7 @@ function typingLoader(el) {
 
 function typeChat(el, chatText) {
   let i = 0;
-
+  const chatContainerHeight = chatContainer.scrollHeight;
   let chatInterval = setInterval(() => {
     if (i < chatText.length) {
       el.innerHTML += chatText.charAt(i);
@@ -27,7 +27,8 @@ function typeChat(el, chatText) {
     else {
       clearInterval(chatInterval);
     }
-    chatContainer.scrollTop = chatContainer.scrollHeight;
+    
+    chatContainer.scrollTo(0, chatContainer.scrollTop + 1)
   }, 25);
 }
 
@@ -69,7 +70,7 @@ const handleSubmit = async (e) => {
 
   // bot's chatstripe
   const uniqueId = generateUID()
-  chatContainer.innerHTML += chatMessage(true, " ", uniqueId)
+  chatContainer.innerHTML += chatMessage(true, "", uniqueId)
 
   // to focus scroll to the bottom 
   chatContainer.scrollTop = chatContainer.scrollHeight;
