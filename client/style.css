@@ -8,13 +8,13 @@
 }
 
 body {
-  background: #343541;
+  background: white;
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  background: #343541;
+  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,25 +23,25 @@ body {
 
 #header {
   font-size: 18px;
-  color: white;
+  color: black;
   margin-bottom: 20px;
   margin-top: 20px;
   display: flex;
 }
 
-#header svg{
+#header svg {
   margin-right: 5px;
 }
 
 #chat_container {
   flex: 1;
-  width: 100%;
+  width: 95%;
   height: 100%;
   max-height: 80vh;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 10px;
   -ms-overflow-style: none;
   scrollbar-width: none;
   padding-bottom: 20px;
@@ -54,12 +54,14 @@ body {
 }
 
 .wrapper {
-  width: 100%;
-  padding: 15px;
+  width: fit-content;
+  padding: 10px 15px;
+  background: #ddd;
+  border-radius: 5px;
 }
 
 .ai {
-  background: #40414F;
+  background: wheat;
 }
 
 .chat {
@@ -69,13 +71,12 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 7px;
+  gap: 15px;
 }
 
 .profile {
-  width: 36px;
-  height: 36px;
-  border-radius: 5px;
+  width: 32px;
+  height: 32px;
   background: transparent;
   display: flex;
   justify-content: center;
@@ -95,11 +96,11 @@ body {
 .message {
   flex: 1;
   line-height: normal;
-  color: #dcdcdc;
-  font-size: 16px;
+  color: black;
+  font-size: 15px;
   max-width: 100%;
   overflow-x: scroll;
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -117,8 +118,9 @@ form {
   background: #40414F;
   display: flex;
   flex-direction: row;
-  gap: 7px;
-  margin-bottom: 30px;
+  gap: 5px;
+  margin-bottom: 25px;
+  border-radius: 8px;
 }
 
 textarea {
@@ -127,7 +129,7 @@ textarea {
   font-size: 15px;
   padding: 5px;
   background: transparent;
-  border-radius: 15px;
+  border-radius: 10px;
   border: none;
   outline: none;
 }

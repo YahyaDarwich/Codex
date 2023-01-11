@@ -9,11 +9,11 @@ function typingLoader(el) {
   el.textContent = "";
 
   loaderInterval = setInterval(() => {
-    el.textContent += ".";
-    if (el.textContent === "....") {
+    el.textContent += "▪️ ";
+    if (el.textContent === "▪️ ▪️ ▪️ ▪️") {
       el.textContent = "";
     }
-  }, 350);
+  }, 80);
 }
 
 function typeChat(el, chatText) {
