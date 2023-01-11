@@ -10,7 +10,7 @@ function typingLoader(el) {
 
   loaderInterval = setInterval(() => {
     el.textContent += "▪️ ";
-    if (el.textContent === "▪️ ▪️ ▪️ ▪️") {
+    if (el.textContent === "▪️ ▪️ ▪️ ▪️ ") {
       el.textContent = "";
     }
   }, 80);
